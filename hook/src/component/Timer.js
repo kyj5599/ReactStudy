@@ -8,7 +8,7 @@ const Timer = (props) => {
     }, 1000);
 
     return () => {
-      // 정리작업 코드
+      // 정리작업 코드(cleanup)
       clearInterval(timer);
       console.log('타이머가 종료되었습니다.')
     }

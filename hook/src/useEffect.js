@@ -1,0 +1,16 @@
+// import './App.css';
+import { useState, useEffect } from 'react';
+import Timer from './component/Timer';
+
+function App() {
+  const [showTimer, setShowTimer] = useState(false);
+  return (
+    <div>
+      {/* showTimer가 True일때만 Timer가 돌아가게끔 */}
+      {showTimer && <Timer />}
+      <button onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
+    </div>
+  );
+}
+
+export default App;
