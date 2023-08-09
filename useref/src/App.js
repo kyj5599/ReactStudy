@@ -15,6 +15,7 @@ const App = () => {
 
   return (
     <div>
+      {/* ref속성 */}
       <input ref={inputRef} type="text" placeholder="username"></input>
       <button onClick={login}>로그인</button>
     </div>
